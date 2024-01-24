@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="btn">Click</button>
+    <button id="btn1">Click Again</button>
+    <p id="demo"></p>
+
+    <script>
+        var btn = document.getElementById("btn")
+        var btn1 = document.getElementById("btn1")
+        btn.addEventListener("click", HelloThere)
+        btn1.addEventListener("click", changeBack)
+
+        function HelloThere() {
+            document.querySelector("body").style.backgroundColor = "red"
+            document.getElementById("demo").innerHTML = "Hello Event Listener"
+            console.log("First Event Clicked")
+        }
+
+        function changeBack() {
+            document.querySelector("body").style.backgroundColor = "white"
+            console.log("Second Event Clicked")
+        }
+    </script>
+    
+</body>
+</html>

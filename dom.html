@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .addMe {
+            background-color: blue;
+            color: white;
+            padding: 3%;
+        }
+    </style>
+</head>
+<body id="body">
+    
+    <p id="demo"></p> 
+    <p id="demo2">Hello</p>
+    <p class="demo1"></p>
+    <p class="demo1"></p>
+    <p class="demo1"></p>
+    <p class="demo1"></p>
+    <p class="demo1"></p>
+    <p class="demo1"></p>
+    <p class="demo1"></p>
+    <script>
+        let p = document.getElementById("demo").innerHTML = "This is a Javascript Demo"
+        // document.getElementById("demo2").style.color = "blue"
+         document.getElementById("demo2").classList.add("addMe")
+        
+    
+
+    //    const c =  document.getElementsByClassName("demo1")
+    //    c[0].innerHTML = "Hello Class 1"
+    //    c[1].innerHTML = "Hello Class 2"
+
+       const query = document.querySelectorAll(".demo1")
+       for (let i = 0; i <= query.length; i++) {
+        query[i].innerHTML = "Query Selector"
+       }
+    </script>
+</body>
+</html>
